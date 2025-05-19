@@ -1,7 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><!-- Your Name – CS & Math Student --></title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --fg: #333;
+      --highlight: #4e79a7;
+      --accent: #f28e2b;
+      --padding: 1rem;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      padding: var(--padding);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--highlight);
+    }
+    header p {
+      font-weight: 300;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+    }
+    nav {
+      background: white;
+      padding: var(--padding);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+    }
+    nav a {
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem 0;
+      color: var(--fg);
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      background: white;
+      padding: var(--padding);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      color: var(--highlight);
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <h1><!-- Your Name Here --></h1>
+    <p>Computer Science &amp; Mathematics Student</p>
+  </header>
+
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <section id="about">
+        <h2>About Me</h2>
+        <p><!-- A short bio: your year, interests in CS/Math, campus life… --></p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong><!-- Project Name --></strong> – <!-- Brief description, tech used --></li>
+          <!-- Repeat as needed -->
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p><!-- e.g. Python, C++, Linear Algebra, Data Structures… --></p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:<!-- your.email@example.com -->"><!-- your.email@example.com --></a></p>
+        <p>GitHub: <a href="https://github.com/<!-- your-username -->"><!-- your-username --></a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <!-- Year --> <!-- Your Name -->
+  </footer>
 </body>
 </html>
