@@ -20,3 +20,8 @@
   opacity: 1 !important;
   pointer-events: auto !important;
 }
+
+body {
+  background: url('/assets/carmel-test.png') no-repeat center center;
+  background-size: cover;
+}
