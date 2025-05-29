@@ -6,7 +6,19 @@ btn.addEventListener('click', () => {
 });
 
 // Typewriter Effect
-const phrases = ['Web Developer.', 'UI/UX Enthusiast.', 'Open-Source Contributor.'];
+const phrases = [
+    'Software Developer.', 
+    'UI/UX Enthusiast.', 
+    'Sunset Chaser.',
+    'Traveller.',
+    'Fireworks Lover.',
+    'Scuba Diver.',
+    'Polo Player.',
+    'Skydiver.',
+    'Hiker.',
+    'Student Pilot',
+    'Soccer Fan.',
+];
 let idx = 0, charIndex = 0, current = '', isDeleting = false;
 const typeEl = document.getElementById('typewriter');
 

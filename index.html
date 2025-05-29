@@ -2,58 +2,220 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Your Name – Developer & Designer</title>
-  <!-- Tailwind via CDN -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Xuanyu Pan – Senior at USC studying CS & Math, passionate about algorithms, web development, and data analysis.">
+  <title>Xuanyu Pan – CS &amp; Math Student</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-inter transition-colors duration-300">
-  <!-- Dark Mode Toggle -->
-  <button id="theme-toggle" class="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-montserrat transition-colors duration-300">
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" aria-label="Toggle Dark Mode" class="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring">
     🌙
   </button>
 
-  <!-- Hero Section -->
-  <header class="h-screen flex flex-col items-center justify-center text-center px-4">
-    <h1 class="text-5xl font-bold mb-4">Hi, I’m Your Name</h1>
-    <p class="text-xl mb-6">I build web experiences</p>
-    <div id="typewriter" class="text-lg text-indigo-600 font-medium"></div>
-    <a href="#projects" class="mt-10 inline-block btn-primary">See My Work ↓</a>
-  </header>
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/70 dark:bg-gray-800/70 backdrop-blur z-10">
+    <ul class="flex justify-center space-x-8 py-4 font-medium">
+      <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+      <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
+      <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
+      <li><a href="#academics" class="hover:text-indigo-600">Academics</a></li>
+      <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 px-4">
-    <h2 class="text-3xl font-semibold text-center mb-12">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project Card -->
-      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
-        <img src="https://via.placeholder.com/400x250" alt="Project screenshot"
-             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Project One</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">
-            A short description of this awesome project.
-          </p>
-          <button data-modal="modal1" class="btn-secondary">Learn More</button>
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <header id="home" class="h-screen flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I’m <span class="text-indigo-600">Xuanyu Pan</span></h1>
+      <p class="text-xl md:text-2xl mb-6">CS &amp; Mathematics Student at USC</p>
+      <div id="typewriter" class="text-lg md:text-xl text-indigo-600 font-medium"></div>
+      <a href="#projects" class="mt-10 inline-block btn-primary">See My Work ↓</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-6">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="assets/grad.jpg" alt="Xuanyu Pan portrait" class="w-40 h-40 md:w-48 md:h-48 rounded-full shadow-lg">
+        <div>
+          <p class="mb-4 text-gray-700 dark:text-gray-300">I’m a senior at USC majoring in Computer Science and Mathematics. My coursework and personal projects center on:</p>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+            <li>🔍 Advanced algorithms &amp; data structures</li>
+            <li>💻 Full‑stack web development (React, Node.js)</li>
+            <li>📊 Data analysis &amp; visualization with Python</li>
+            <li>📱 Mobile app development (Java, Kotlin)</li>
+          </ul>
+          <p class="mt-4 text-gray-700 dark:text-gray-300">Outside the classroom, I’m active in <a href="https://github.com/orgs/USC-ACM" target="_blank" class="text-indigo-600 hover:underline">ACM</a> and the <a href="https://math.usc.edu/club" target="_blank" class="text-indigo-600 hover:underline">Math Club</a>. I also volunteer teaching coding at local youth tech camps.</p>
+          <a href="#contact" class="mt-6 inline-block btn-primary">Get in Touch</a>
         </div>
       </div>
-      <!-- Repeat cards... -->
-    </div>
-  </section>
+    </section>
 
-  <!-- Modal (hidden by default) -->
-  <div id="modal1" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
-    <div class="bg-white dark:bg-gray-800 rounded-xl p-8 max-w-lg mx-4 relative">
-      <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-800">✕</button>
-      <h3 class="text-2xl font-bold mb-4">Project One Details</h3>
-      <p class="mb-4">Longer write-up about your project, tech stack, challenges, etc.</p>
-      <a href="#" target="_blank" class="btn-primary">View on GitHub</a>
-    </div>
-  </div>
+    
 
-  <script src="assets/script.js"></script>
-</body>
-</html>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+      <h2 class="text-3xl font-semibold text-center mb-12">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Card 1 -->
+        <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
+          <img src="assets/events-usc.png" alt="Events@USC app screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Events@USC</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Android event discovery app built with Java &amp; Kotlin, featuring real-time updates and interactive maps.</p>
+            <a href="https://github.com/xuanyupa/EventsUSC" target="_blank" class="btn-secondary">View Repo</a>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
+          <img src="assets/minesweeper.png" alt="Minesweeper App screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Minesweeper App</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Dynamic grid‐based game for Android implemented in Java, with custom difficulty levels and score tracking.</p>
+            <a href="https://github.com/xuanyupa/MinesweeperApp" target="_blank" class="btn-secondary">View Repo</a>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
+          <img src="assets/grade-calculator.png" alt="Grade Calculator Web App screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Grade Calculator</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Interactive web form using HTML, CSS &amp; JavaScript to calculate weighted grades and GPA projections.</p>
+            <a href="https://github.com/xuanyupa/GradeCalculator" target="_blank" class="btn-secondary">View Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-6">Skills</h2>
+      <ul class="flex flex-wrap justify-center gap-4 text-gray-700 dark:text-gray-300">
+        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Python</li>
+        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Java</li>
+        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">C++</li>
+        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">JavaScript</li>
+        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Data Structures</li>
+        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Algorithms</li>
+        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Linear Algebra</li>
+        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Differential Equations</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-4 bg-white dark:bg-gray-800">
+      <h2 class="text-3xl font-semibold text-center mb-12">Education</h2>
+      <div class="max-w-6xl mx-auto space-y-8">
+        <!-- USC MS -->
+        <div class="flex items-center gap-4">
+          <img src="assets/usc-logo.png" alt="University of Southern California logo" class="w-16 h-16 object-contain">
+          <div>
+            <h3 class="text-xl font-semibold">University of Southern California</h3>
+            <p class="text-gray-700 dark:text-gray-300">Master of Science (MS), Computer Science</p>
+            <p class="text-gray-500 dark:text-gray-400">Apr 2024</p>
+          </div>
+        </div>
+        <!-- USC BS -->
+        <div class="flex items-center gap-4">
+          <img src="assets/usc-logo.png" alt="University of Southern California logo" class="w-16 h-16 object-contain">
+          <div>
+            <h3 class="text-xl font-semibold">University of Southern California</h3>
+            <p class="text-gray-700 dark:text-gray-300">Bachelor of Science (BS), Computational &amp; Applied Mathematics &amp; Computer Science</p>
+            <p class="text-gray-500 dark:text-gray-400">Aug 2021 - May 2025</p>
+          </div>
+        </div>
+        <!-- Carmel Catholic High School -->
+        <div class="flex items-center gap-4">
+          <img src="assets/carmel-logo.png" alt="Carmel Catholic High School logo" class="w-16 h-16 object-contain">
+          <div>
+            <h3 class="text-xl font-semibold">Carmel Catholic High School</h3>
+            <p class="text-gray-700 dark:text-gray-300">High School Diploma</p>
+            <p class="text-gray-500 dark:text-gray-400">2019 - 2021</p>
+          </div>
+        </div>
+        <!-- Marquette Academy -->
+        <div class="flex items-center gap-4">
+          <img src="assets/marquette-logo.png" alt="Marquette Academy logo" class="w-16 h-16 object-contain">
+          <div>
+            <h3 class="text-xl font-semibold">Marquette Academy</h3>
+            <p class="text-gray-500 dark:text-gray-400">Aug 2018 - May 2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+      <h2 class="text-3xl font-semibold text-center mb-12">Academics</h2>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- MATH -->
+        <div>
+          <h4 class="text-xl font-medium mb-2">MATH</h4>
+          <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+            <li>MATH-225: Linear Algebra and Linear Differential Equations</li>
+            <li>MATH-229: Calculus III for Engineers and Scientists</li>
+            <li>MATH-407: Probability Theory</li>
+            <li>MATH-408: Mathematical Statistics </li>
+            <li>MATH-425A: Fundamental Concepts of Analysis </li>
+            <li>MATH-430: Theory of Numbers </li>
+            <li>MATH-432: Applied Combinatorics </li>
+            <li>MATH-458: Numerical Methods </li>
+            <li>MATH-466: Dynamic Modeling </li>
+          </ul>
+        </div>
+        <!-- CS -->
+        <div>
+          <h4 class="text-xl font-medium mb-2">Computer Science</h4>
+          <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+            <li>CSCI-103L: Introduction to Programming </li>
+            <li>CSCI-104L: Data Structures and Object-Oriented Design </li>
+            <li>CSCI-170: Discrete Methods in Computer Science </li>
+            <li>CSCI-201L: Principles of Software Development </li>
+            <li>CSCI-270: Introduction to Algorithms and Theory of Computing </li>
+            <li>CSCI-310: Software Engineering </li>
+            <li>CSCI-353: Introduction to Internetworking </li>
+            <li>CSCI-356: Introduction to Computer Systems </li>
+            <li>CSCI-360: Introduction to Artificial Intelligence </li>
+            <li>CSCI-401: Capstone: Design and Construction of Large Software Systems </li>
+            <li>CSCI-490x: Directed Research </li>
+            <li>EE-109L: Introduction to Embedded Systems </li>
+            <li>ITP-368: Programming Graphical User Interfaces </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-20 px-4 pb-32 bg-gray-50 dark:bg-gray-900"
+    >
+      <h2 class="text-3xl font-semibold text-center mb-6">Contact</h2>
+
+      <div class="text-center">
+        <button
+          type="button"
+          onclick="window.location.href='mailto:xuanyupa@usc.edu'"
+          class="btn-primary inline-block px-6 py-3 rounded-full"
+        >
+          Ready to connect? Click me!
+        </button>
+      </div>
+    </section>
+
