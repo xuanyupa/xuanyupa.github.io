@@ -1,128 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Xuanyu Pan – CS &amp; Math Student</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #f7f9fc;
-      --fg: #333;
-      --highlight: #4e79a7;
-      --accent: #f28e2b;
-      --padding: 1rem;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.6;
-      padding: var(--padding);
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: var(--highlight);
-    }
-    header p {
-      font-weight: 300;
-    }
-    main {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 2rem;
-    }
-    nav {
-      background: white;
-      padding: var(--padding);
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav ul {
-      list-style: none;
-    }
-    nav a {
-      text-decoration: none;
-      display: block;
-      padding: 0.5rem 0;
-      color: var(--fg);
-    }
-    nav a:hover {
-      color: var(--accent);
-    }
-    section {
-      background: white;
-      padding: var(--padding);
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    section h2 {
-      margin-bottom: 1rem;
-      color: var(--highlight);
-    }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Name – Developer & Designer</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <header>
-    <h1>Xuanyu Pan</h1>
-    <p>Computer Science &amp; Mathematics Student</p>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-inter transition-colors duration-300">
+  <!-- Dark Mode Toggle -->
+  <button id="theme-toggle" class="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+    🌙
+  </button>
+
+  <!-- Hero Section -->
+  <header class="h-screen flex flex-col items-center justify-center text-center px-4">
+    <h1 class="text-5xl font-bold mb-4">Hi, I’m Your Name</h1>
+    <p class="text-xl mb-6">I build web experiences</p>
+    <div id="typewriter" class="text-lg text-indigo-600 font-medium"></div>
+    <a href="#projects" class="mt-10 inline-block btn-primary">See My Work ↓</a>
   </header>
 
-  <main>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I’m a junior at USC studying Computer Science and Mathematics. I’m passionate about algorithms, web development, and data analysis. On campus I’m an active member of ACM and the Math Club.
-        </p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Events@USC</strong> – Android app for event discovery using Java &amp; Kotlin</li>
-          <li><strong>Minesweeper App</strong> – Dynamic grid‐based game implemented in Java (Android)</li>
-          <li><strong>Grade Calculator</strong> – Web form to calculate weighted grades using HTML, CSS &amp; JavaScript</li>
-        </ul>
-      </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <p>Python, Java, C++, JavaScript, Data Structures &amp; Algorithms, Linear Algebra, Differential Equations</p>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:xuanyupa@usc.edu">xuanyupa@usc.edu</a></p>
-        <p>GitHub: <a href="https://github.com/xuanyupa">xuanyupa</a></p>
-      </section>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-4">
+    <h2 class="text-3xl font-semibold text-center mb-12">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
+        <img src="https://via.placeholder.com/400x250" alt="Project screenshot"
+             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Project One</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            A short description of this awesome project.
+          </p>
+          <button data-modal="modal1" class="btn-secondary">Learn More</button>
+        </div>
+      </div>
+      <!-- Repeat cards... -->
     </div>
-  </main>
+  </section>
 
-  <footer>
-    &copy; 2025 Xuanyu Pan
-  </footer>
+  <!-- Modal (hidden by default) -->
+  <div id="modal1" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white dark:bg-gray-800 rounded-xl p-8 max-w-lg mx-4 relative">
+      <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-800">✕</button>
+      <h3 class="text-2xl font-bold mb-4">Project One Details</h3>
+      <p class="mb-4">Longer write-up about your project, tech stack, challenges, etc.</p>
+      <a href="#" target="_blank" class="btn-primary">View on GitHub</a>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
