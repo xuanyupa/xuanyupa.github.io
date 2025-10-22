@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kauaʻi, Hawaii – Travel – Xuanyu Pan</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-montserrat transition-colors duration-300">
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" aria-label="Toggle Dark Mode"
+    class="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring">
+    🌙
+  </button>
+
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/70 dark:bg-gray-800/70 backdrop-blur z-10">
+    <ul class="flex justify-center space-x-8 py-4 font-medium">
+      <li><a href="index.html#about" class="hover:text-indigo-600">About</a></li>
+      <li><a href="personal.html" class="hover:text-indigo-600">Personal</a></li>
+      <li><a href="../travel.html" class="hover:text-indigo-600">Travel</a></li>
+      <li><a href="index.html#contact" class="hover:text-indigo-600">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main class="pt-24">
+    <!-- Hero -->
+    <header class="relative h-[45vh] min-h-[320px] flex items-center justify-center">
+      <img src="../assets/travel/kauai/kauai-cover.jpeg" alt="Nā Pali Coast, Kauaʻi"
+           class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative text-center px-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-3">Kauaʻi, Hawaii</h1>
+        <p class="text-white/90 max-w-2xl mx-auto">
+          Waterfalls, canyons, and emerald cliffs — the Garden Island at its most dramatic.
+        </p>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="px-6 py-12 max-w-4xl mx-auto">
+      <p class="text-gray-700 dark:text-gray-300">
+        Highlights from my trip to Kauaʻi: sunrise on the South Shore, hiking the <strong>Waimea Canyon</strong> rim,
+        and a boat tour along the <strong>Nā Pali Coast</strong>. Between shave ice stops and turtle sightings,
+        this island quickly became a favorite.
+      </p>
+      <div class="mt-6">
+        <a href="travel.html" class="text-indigo-600 dark:text-indigo-300 hover:underline">← Back to all trips</a>
+      </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section class="px-6 pb-6 max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow p-5">
+        <h3 class="font-semibold mb-2">Base</h3>
+        <p class="text-gray-600 dark:text-gray-300">Poʻipū (South Shore)</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow p-5">
+        <h3 class="font-semibold mb-2">Best Moment</h3>
+        <p class="text-gray-600 dark:text-gray-300">Sunset light on the Nā Pali ridgelines</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow p-5">
+        <h3 class="font-semibold mb-2">Trip Vibe</h3>
+        <p class="text-gray-600 dark:text-gray-300">Hikes + beaches + poke bowls</p>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="px-6 py-10 max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+      <article class="bg-white dark:bg-gray-800 rounded-2xl shadow overflow-hidden">
+        <img src="assets/kauai-napali.jpg" alt="Nā Pali Coast" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Nā Pali Coast</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Sea caves, towering cliffs, and unreal water color. A boat tour is a must for the coastline perspective.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-white dark:bg-gray-800 rounded-2xl shadow overflow-hidden">
+        <img src="assets/kauai-waimea.jpg" alt="Waimea Canyon" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Waimea Canyon</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            “Grand Canyon of the Pacific.” Scenic drives, overlooks, and trails with epic views after short hikes.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-white dark:bg-gray-800 rounded-2xl shadow overflow-hidden">
+        <img src="assets/kauai-wailua.jpg" alt="Wailua Falls" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Wailua Falls</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            A classic double waterfall near Līhuʻe — easy to reach, stunning after rain.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-white dark:bg-gray-800 rounded-2xl shadow overflow-hidden">
+        <img src="assets/kauai-poipu.jpg" alt="Poʻipū Beach" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Poʻipū Beach</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Chill waters, occasional turtles and monk seals, and golden-hour perfection.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Gallery -->
+    <section class="px-6 pb-16 max-w-6xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">Photo Gallery</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img src="assets/kauai-1.jpg" alt="Kauaʻi scenery" class="w-full h-56 object-cover rounded-xl">
+        <img src="assets/kauai-2.jpg" alt="Coastal cliffs" class="w-full h-56 object-cover rounded-xl">
+        <img src="assets/kauai-3.jpg" alt="Beach sunset" class="w-full h-56 object-cover rounded-xl">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Xuanyu Pan – Senior at USC studying CS & Math, passionate about algorithms, web development, and data analysis.">
-  <title>Xuanyu Pan – CS &amp; Math Student</title>
+  <meta name="description" content="Xuanyu Pan – Senior at USC studying CS & Applied and Computational Math, passionate about algorithms, web development, and data analysis.">
+  <title>Xuanyu Pan – CS &amp; Applied and Computational Math Student</title>
 
   <!-- Favicon -->
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -37,7 +37,9 @@
       <li><a href="#about" class="hover:text-indigo-600">About</a></li>
       <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
       <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
+      <li><a href="#education" class="hover:text-indigo-600">Education</a></li>
       <li><a href="#academics" class="hover:text-indigo-600">Academics</a></li>
+      <li><a href="#personal" class="hover:text-indigo-600">Personal</a></li>
       <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
     </ul>
   </nav>
@@ -46,7 +48,7 @@
     <!-- Hero Section -->
     <header id="home" class="h-screen flex flex-col items-center justify-center text-center px-4">
       <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I’m <span class="text-indigo-600">Xuanyu Pan</span></h1>
-      <p class="text-xl md:text-2xl mb-6">CS &amp; Mathematics Student at USC</p>
+      <p class="text-xl md:text-2xl mb-6">CS &amp; Applied and Computational Mathematics Student at USC</p>
       <div id="typewriter" class="text-lg md:text-xl text-indigo-600 font-medium"></div>
       <a href="#projects" class="mt-10 inline-block btn-primary">See My Work ↓</a>
     </header>
@@ -59,10 +61,11 @@
         <div>
           <p class="mb-4 text-gray-700 dark:text-gray-300">I’m a senior at USC majoring in Computer Science and Mathematics. My coursework and personal projects center on:</p>
           <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            <li>🔍 Advanced algorithms &amp; data structures</li>
-            <li>💻 Full‑stack web development (React, Node.js)</li>
-            <li>📊 Data analysis &amp; visualization with Python</li>
-            <li>📱 Mobile app development (Java, Kotlin)</li>
+            <li>🤖 Machine learning &amp; data modeling for finance and analytics</li>
+            <li>💻 Full-stack development with React, Flask, and Spring Boot</li>
+            <li>📱 Cross-platform mobile apps using React Native &amp; Flutter</li>
+            <li>🔒 Systems programming &amp; post-quantum cryptography research</li>
+            <li>📊 Data visualization, backend optimization, and simulation frameworks</li>
           </ul>
           <p class="mt-4 text-gray-700 dark:text-gray-300">Outside the classroom, I’m active in <a href="https://github.com/orgs/USC-ACM" target="_blank" class="text-indigo-600 hover:underline">ACM</a> and the <a href="https://math.usc.edu/club" target="_blank" class="text-indigo-600 hover:underline">Math Club</a>. I also volunteer teaching coding at local youth tech camps.</p>
           <a href="#contact" class="mt-6 inline-block btn-primary">Get in Touch</a>
@@ -78,29 +81,46 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <!-- Card 1 -->
         <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
-          <img src="assets/events-usc.png" alt="Events@USC app screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          <img src="assets/project/events-usc.png" alt="Events@USC app screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Events@USC</h3>
             <p class="text-gray-600 dark:text-gray-300 mb-4">Android event discovery app built with Java &amp; Kotlin, featuring real-time updates and interactive maps.</p>
-            <a href="https://github.com/xuanyupa/EventsUSC" target="_blank" class="btn-secondary">View Repo</a>
+            <a href="https://github.com/xuanyupa/EventSC" target="_blank" class="btn-secondary">View Repo</a>
           </div>
         </article>
         <!-- Card 2 -->
         <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
-          <img src="assets/minesweeper.png" alt="Minesweeper App screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          <img src="assets/project/minesweeper.png" alt="Minesweeper App screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Minesweeper App</h3>
             <p class="text-gray-600 dark:text-gray-300 mb-4">Dynamic grid‐based game for Android implemented in Java, with custom difficulty levels and score tracking.</p>
             <a href="https://github.com/xuanyupa/MinesweeperApp" target="_blank" class="btn-secondary">View Repo</a>
           </div>
         </article>
-        <!-- Card 3 -->
+        <!-- Card: Beats4U -->
         <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
-          <img src="assets/grade-calculator.png" alt="Grade Calculator Web App screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          <img src="assets/project/beats4u.png" alt="Beats4U Music Streaming App screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Grade Calculator</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">Interactive web form using HTML, CSS &amp; JavaScript to calculate weighted grades and GPA projections.</p>
-            <a href="https://github.com/xuanyupa/GradeCalculator" target="_blank" class="btn-secondary">View Repo</a>
+            <h3 class="text-xl font-semibold mb-2">Beats4U</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Social music streaming platform built with <strong>React</strong> and <strong>Java Spring Boot</strong> that enables users to stream, share, and interact through playlists.
+              Features include following users, liking playlists, and song recommendations for a connected music community.
+            </p>
+            <a href="https://github.com/xuanyupa/Beats4U" target="_blank" class="btn-secondary">View Repo</a>
+          </div>
+        </article>
+        <!-- Card: BookLoom -->
+        <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden group">
+          <img src="assets/project/bookloom.png" alt="BookLoom mobile app screenshot" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">BookLoom</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              AI-powered mobile reading app that lets users reimagine book stories by editing them in different styles
+              while preserving the author's original voice.
+            </p>
+            <div class="flex gap-3">
+              <a href="https://github.com/MarkFu0213/Bookloom" target="_blank" class="btn-secondary">View Repo</a>
+            </div>
           </div>
         </article>
       </div>
@@ -108,62 +128,93 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 px-4 max-w-3xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center mb-6">Skills</h2>
-      <ul class="flex flex-wrap justify-center gap-4 text-gray-700 dark:text-gray-300">
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Python</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Java</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">C</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">C++</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">HTML</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">CSS</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">JavaScript</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Dart</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">MATLAB</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">LaTex</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Data Structures</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Algorithms</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Linear Algebra</li>
-        <li class="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 rounded-full">Differential Equations</li>
-      </ul>
+    <section id="skills" class="py-20 px-6 bg-white dark:bg-gray-800">
+      <h2 class="text-3xl font-semibold text-center mb-12">Skills</h2>
+
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Programming Languages -->
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold text-center mb-4 text-gray-800 dark:text-gray-100">Programming Languages</h3>
+          <ul class="flex flex-wrap justify-center gap-2 text-gray-700 dark:text-gray-300">
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Python</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Java</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">C</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">C++</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">C#</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">JavaScript / TypeScript</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Dart</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Swift</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">SQL</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">MATLAB</li>
+          </ul>
+        </div>
+
+        <!-- Frameworks & Tools -->
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold text-center mb-4 text-gray-800 dark:text-gray-100">Frameworks &amp; Tools</h3>
+          <ul class="flex flex-wrap justify-center gap-2 text-gray-700 dark:text-gray-300">
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">React / React Native</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Flask</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Spring Boot</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Flutter</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">MongoDB</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">MySQL</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">AWS</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Docker</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Android Studio</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Git / GitHub</li>
+          </ul>
+        </div>
+
+        <!-- Core CS & Math -->
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold text-center mb-4 text-gray-800 dark:text-gray-100">Core CS &amp; Math</h3>
+          <ul class="flex flex-wrap justify-center gap-2 text-gray-700 dark:text-gray-300">
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Algorithms &amp; Data Structures</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Operating Systems</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Computer Architecture</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Cryptography / Security</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Linear Algebra</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Probability &amp; Statistics</li>
+            <li class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full">Differential Equations</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
+
+
     <!-- Education Section -->
-    <section id="education" class="py-20 px-4 bg-white dark:bg-gray-800">
+    <section id="education" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
       <h2 class="text-3xl font-semibold text-center mb-12">Education</h2>
       <div class="max-w-6xl mx-auto space-y-8">
-        <!-- USC MS -->
-        <div class="flex items-center gap-4">
-          <img src="assets/usc-logo.png" alt="University of Southern California logo" class="w-16 h-16 object-contain">
-          <div>
-            <h3 class="text-xl font-semibold">University of Southern California</h3>
-            <p class="text-gray-700 dark:text-gray-300">Master of Science (MS), Computer Science</p>
-            <p class="text-gray-500 dark:text-gray-400">Apr 2024</p>
-          </div>
-        </div>
         <!-- USC BS -->
         <div class="flex items-center gap-4">
-          <img src="assets/usc-logo.png" alt="University of Southern California logo" class="w-16 h-16 object-contain">
+          <img src="assets/education/usc-logo.png" alt="University of Southern California logo" class="w-16 h-16 object-contain">
           <div>
             <h3 class="text-xl font-semibold">University of Southern California</h3>
-            <p class="text-gray-700 dark:text-gray-300">Bachelor of Science (BS), Computational &amp; Applied Mathematics &amp; Computer Science</p>
-            <p class="text-gray-500 dark:text-gray-400">Aug 2021 - May 2025</p>
+            <p class="text-gray-700 dark:text-gray-300">Bachelor of Science (BS), Computer Science / Applied &amp; Computational Mathematics</p>
+            <p class="text-gray-700 dark:text-gray-300">Los Angeles, California, USA</p>
+            <p class="text-gray-500 dark:text-gray-400">Aug 2021 - December 2025</p>
           </div>
         </div>
         <!-- Carmel Catholic High School -->
         <div class="flex items-center gap-4">
-          <img src="assets/carmel-logo.png" alt="Carmel Catholic High School logo" class="w-16 h-16 object-contain">
+          <img src="assets/education/carmel-logo.png" alt="Carmel Catholic High School logo" class="w-16 h-16 object-contain">
           <div>
             <h3 class="text-xl font-semibold">Carmel Catholic High School</h3>
             <p class="text-gray-700 dark:text-gray-300">High School Diploma</p>
-            <p class="text-gray-500 dark:text-gray-400">2019 - 2021</p>
+            <p class="text-gray-700 dark:text-gray-300">Mundelein, Illinois, USA</p>
+            <p class="text-gray-500 dark:text-gray-400">Aug 2019 - May 2021</p>
           </div>
         </div>
         <!-- Marquette Academy -->
         <div class="flex items-center gap-4">
-          <img src="assets/marquette-logo.png" alt="Marquette Academy logo" class="w-16 h-16 object-contain">
+          <img src="assets/education/marquette-logo.png" alt="Marquette Academy logo" class="w-16 h-16 object-contain">
           <div>
             <h3 class="text-xl font-semibold">Marquette Academy</h3>
+             <p class="text-gray-700 dark:text-gray-300">Exchange Student</p>
+             <p class="text-gray-700 dark:text-gray-300">Ottawa, Illinois, USA</p>
             <p class="text-gray-500 dark:text-gray-400">Aug 2018 - May 2019</p>
           </div>
         </div>
@@ -172,12 +223,12 @@
 
 
     <!-- Academics Section -->
-    <section id="academics" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+    <section id="academics" class="py-20 px-6 bg-white dark:bg-gray-800">
       <h2 class="text-3xl font-semibold text-center mb-12">Academics</h2>
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- MATH -->
         <div>
-          <h4 class="text-xl font-medium mb-2">MATH</h4>
+          <h4 class="text-xl font-medium mb-2">Mathematics</h4>
           <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
             <li>MATH-225: Linear Algebra and Linear Differential Equations</li>
             <li>MATH-229: Calculus III for Engineers and Scientists</li>
@@ -200,6 +251,7 @@
             <li>CSCI-201L: Principles of Software Development </li>
             <li>CSCI-270: Introduction to Algorithms and Theory of Computing </li>
             <li>CSCI-310: Software Engineering </li>
+            <li>CSCI-350: Introduction to Operating Systems</li>
             <li>CSCI-353: Introduction to Internetworking </li>
             <li>CSCI-356: Introduction to Computer Systems </li>
             <li>CSCI-360: Introduction to Artificial Intelligence </li>
@@ -212,10 +264,34 @@
       </div>
     </section>
 
+    <!-- Personal Preview -->
+    <section id="personal" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 class="text-3xl font-semibold mb-4">Personal</h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              A peek into life outside code — travel & photography, music, and little stories about my
+              best friend <strong>Cutie Pie</strong> (my male Syrian hamster 🐹). You’ll also find a small gallery
+              and notes on hobbies like scuba, hiking, and more.
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">
+              Curious? Visit the dedicated page for photos, highlights, and fun write-ups.
+            </p>
+            <a href="personal.html" class="btn-primary inline-block">Explore Personal Page →</a>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+            <img src="assets/cutiepie.jpeg" alt="Cutie Pie the Syrian hamster" class="w-full h-64 object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Contact Section -->
     <section
       id="contact"
-      class="py-20 px-4 pb-32 bg-gray-50 dark:bg-gray-900"
+      class="py-20 px-6 bg-white dark:bg-gray-800"
     >
       <h2 class="text-3xl font-semibold text-center mb-6">Contact</h2>
 
@@ -229,4 +305,3 @@
         </button>
       </div>
     </section>
-
