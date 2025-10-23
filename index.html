@@ -325,7 +325,7 @@
 
   </main>
 
-    <!-- Music Control Button -->
+  <!-- Music Control Button -->
   <button id="music-btn"
           class="fixed bottom-6 right-6 bg-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:opacity-90">
     🎵 Play Music
@@ -336,70 +336,54 @@
        style="position:fixed;width:1px;height:1px;bottom:0;right:0;opacity:0;pointer-events:none;"></div>
 
   <script>
-    let player = null;
-    let ready = false;
-    let playing = false;
+    (() => {
+      let player = null;
+      let playing = false;
 
-    // YouTube API callback must be global
-    function onYouTubeIframeAPIReady() {
-      // do nothing here; we'll lazy-create on first click
-      ready = true;
-    }
+      // YouTube API callback must be global:
+      window.onYouTubeIframeAPIReady = function () {
+        // no-op; we lazy-create on first click
+      };
 
-    const btn = document.getElementById('music-btn');
+      const musicBtn = document.getElementById('music-btn');  // <— renamed
 
-    function startFadeIn() {
-      player.setVolume(0);
-      player.playVideo();
-      playing = true;
-      btn.textContent = '⏸️ Pause Music';
+      function startFadeIn() {
+        player.setVolume(0);
+        player.playVideo();
+        playing = true;
+        musicBtn.textContent = '⏸️ Pause Music';
+        let vol = 0, target = 20, step = 2;
+        const fade = setInterval(() => {
+          vol += step;
+          player.setVolume(vol);
+          if (vol >= target) clearInterval(fade);
+        }, 200);
+      }
 
-      let vol = 0, target = 20, step = 2;
-      const fade = setInterval(() => {
-        vol += step;
-        player.setVolume(vol);
-        if (vol >= target) clearInterval(fade);
-      }, 200);
-    }
-
-    btn.addEventListener('click', () => {
-      // If player hasn't been created yet, create it now (user gesture ensures playback is allowed)
-      if (!player) {
-        // If API not loaded yet, wait a tick
-        if (!window.YT || !YT.Player) {
-          // Try again shortly
-          setTimeout(() => btn.click(), 150);
+      musicBtn.addEventListener('click', () => {
+        if (!player) {
+          if (!window.YT || !YT.Player) {
+            setTimeout(() => musicBtn.click(), 150);
+            return;
+          }
+          player = new YT.Player('yt-player', {
+            videoId: 'CV6dmNswqBQ',
+            playerVars: { autoplay: 0, controls: 0, loop: 1, playlist: 'CV6dmNswqBQ', rel: 0, modestbranding: 1 },
+            events: { onReady: () => { if (!playing) startFadeIn(); } }
+          });
           return;
         }
-        player = new YT.Player('yt-player', {
-          videoId: 'CV6dmNswqBQ',
-          playerVars: {
-            autoplay: 0,
-            controls: 0,
-            loop: 1,
-            playlist: 'CV6dmNswqBQ',
-            rel: 0,
-            modestbranding: 1
-          },
-          events: {
-            onReady: () => {
-              if (!playing) startFadeIn();
-            }
-          }
-        });
-        return; // onReady will handle playback
-      }
-
-      // Toggle play/pause for an existing player
-      if (!playing) {
-        startFadeIn();
-      } else {
-        player.pauseVideo();
-        playing = false;
-        btn.textContent = '🎵 Play Music';
-      }
-    });
+        if (!playing) {
+          startFadeIn();
+        } else {
+          player.pauseVideo();
+          playing = false;
+          musicBtn.textContent = '🎵 Play Music';
+        }
+      });
+    })();
   </script>
+
 
 
   <footer id="contact" class="bg-gray-100 dark:bg-gray-900 py-8 border-t border-gray-200 dark:border-gray-700">
