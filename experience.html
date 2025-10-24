@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Experience – Xuanyu Pan</title>
+
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2d9d6a0a0.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-montserrat transition-colors duration-300">
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" aria-label="Toggle Dark Mode" class="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring">
+    🌙
+  </button>
+
+  <!-- Header -->
+  <header class="py-12 text-center">
+    <h1 class="text-4xl font-bold mb-2">Work Experience</h1>
+    <p class="text-gray-600 dark:text-gray-400">Professional, Research, and Academic Roles</p>
+    <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+      <a href="index.html" class="text-indigo-600 hover:underline">← Back to Home</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 space-y-16 pb-20">
+
+    <!-- Research & Academic Experience -->
+    <section id="research-academic">
+      <h2 class="text-2xl font-semibold mb-8 border-b border-gray-300 dark:border-gray-700 pb-2">
+        Research & Academic Experience
+      </h2>
+
+      <div class="space-y-8">
+
+        <!-- Lattice Group -->
+        <article id="lattice" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Research Assistant — Lattice Group (Professor Zhang)</h3>
+        <p class="text-gray-700 dark:text-gray-300">University of Southern California — Los Angeles, CA</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">May 2025 – Present</p>
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Surveyed state-of-the-art <strong>post-quantum cryptography</strong> (LWE/RLWE, module-LWE) with a focus on concrete security estimates and parameter selection.</li>
+            <li>Implemented <strong>polynomial commitment</strong> and <strong>evaluation</strong> components inspired by recent SNARKs; designed test vectors and micro-benchmarks to validate homomorphic operations and batching behavior.</li>
+            <li>Optimized ring arithmetic (NTT/INTT, CRT packing) and reduced allocation hotspots; profiled constant-time code paths to minimize data-dependent branches.</li>
+            <li>Wrote harnesses for <strong>correctness and timing variance</strong> checks (median/percentile latencies) under varied modulus sizes and ring dimensions.</li>
+            <li>Participated in code reviews for constant-time discipline, memory layout, and side-channel considerations; documented API surfaces for reuse by downstream proof systems.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">LWE / RLWE</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Polynomial Commitments</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">NTT / CRT</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Constant-Time Coding</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Benchmarks</span>
+        </div>
+        </article>
+
+        <!-- FLS Lab -->
+        <article id="fls" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Research Assistant — FLS Lab (Professor Ghandeharizadeh)</h3>
+        <p class="text-gray-700 dark:text-gray-300">University of Southern California — Los Angeles, CA</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">August 2024 – May 2025</p>
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Built end-to-end pipelines for <strong>drone obstacle detection</strong> and camera identification; evaluated error rates on <strong>Pi3 / Pi3W / Arducam</strong> across multiple marker sizes and distances.</li>
+            <li>Standardized capture scripts (exposure/ISO presets, frame sampling, batch naming) and logging utilities, <strong>improving collection throughput by ~20%</strong>.</li>
+            <li>Curated datasets with metadata (lighting, motion blur, angle) and implemented stratified train/val/test splits for reliable comparisons.</li>
+            <li>Benchmarked CV models under varied lighting and motion profiles; summarized model trade-offs (precision/recall vs. latency, CPU vs. GPU).</li>
+            <li>Produced concise experiment reports with plots and ablations to guide deployment choices for onboard inference.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Computer Vision</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Raspberry Pi / Arducam</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Data Pipelines</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Model Evaluation</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Experiment Reporting</span>
+        </div>
+        </article>
+
+        <!-- GLab -->
+        <article id="glab" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Research Assistant — GLab (Professor Goodney)</h3>
+        <p class="text-gray-700 dark:text-gray-300">University of Southern California — Los Angeles, CA</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">May 2024 – May 2025</p>
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Analyzed and optimized <strong>MAME</strong> subsystems to profile device timing and I/O paths; instrumented traces to isolate jitter and contention.</li>
+            <li>Designed a <strong>modular hardware/kernel simulation framework</strong> supporting <strong>RISC-V</strong> and <strong>M68K</strong>; defined device abstractions and board components to plug peripherals consistently.</li>
+            <li>Implemented mock devices and stubs to speed up kernel bring-up; added regression tests to compare emulator behavior with reference kernels.</li>
+            <li>Documented integration patterns and debugging playbooks (trace points, timing diagrams) to shorten iteration time for new devices.</li>
+            <li>Collaborated with peers on PR reviews focusing on determinism, clocking models, and reproducible builds.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">MAME</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">RISC-V / M68K</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Device Models</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Emulation Tracing</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Regression Testing</span>
+        </div>
+        </article>
+
+
+        <!-- Course Producer — CSCI 103 -->
+        <article id="cp-103" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Course Producer — CSCI-103: Introduction to Programming</h3>
+        <p class="text-gray-700 dark:text-gray-300">USC Viterbi School of Engineering — Los Angeles, CA</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">Aug 2023 – Dec 2024</p>
+
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Ran weekly labs and office hours covering C++ fundamentals: control flow, functions, classes/objects, modules, and I/O.</li>
+            <li>Taught practical memory concepts (stack vs. heap, pointers/references, RAII) and safe patterns for dynamic allocation.</li>
+            <li>Coached debugging with <strong>gdb/lldb</strong> (breakpoints, watchpoints, backtraces) and runtime tools (address/undefined-behavior sanitizers).</li>
+            <li>Reviewed students’ code for readability and asymptotic reasoning; reinforced style guides and testable design.</li>
+            <li>Built example-driven walkthroughs for toolchains (compiler flags, Makefiles), unit testing basics, and Git/GitHub workflows.</li>
+            <li>Partnered with instructors to refine rubrics and autograder harnesses on Gradescope, reducing regrade friction.</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">C++</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">gdb/lldb</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Makefiles</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Gradescope</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Unit Testing</span>
+        </div>
+        </article>
+
+        <!-- Course Producer — CSCI 170 -->
+        <article id="cp-170" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Course Producer — CSCI-170: Discrete Methods in CS</h3>
+        <p class="text-gray-700 dark:text-gray-300">USC Viterbi School of Engineering — Los Angeles, CA</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">Aug 2023 – Dec 2024</p>
+
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Led weekly discussion sections on logic, sets, functions/relations, combinatorics, and graph theory fundamentals.</li>
+            <li>Ran proof workshops (direct, contradiction, contrapositive, induction, strong induction) with step-by-step feedback.</li>
+            <li>Guided students through recurrence relations and asymptotic notation; connected counting to algorithmic complexity.</li>
+            <li>Held problem-solving hours for classic topics (invariants, the Pigeonhole Principle, shortest paths, matching).</li>
+            <li>Created LaTeX solution outlines and rubric checklists emphasizing rigor, clarity, and common proof pitfalls.</li>
+            <li>Supported exam review sessions with structured practice sets and error-pattern summaries from homework.</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Proof Techniques</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Combinatorics</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Graph Theory</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Recurrences</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">LaTeX</span>
+        </div>
+        </article>
+
+        <!-- Course Producer — CSCI 356 -->
+        <article id="cp-356" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Course Producer — CSCI-356: Introduction to Computer Systems</h3>
+        <p class="text-gray-700 dark:text-gray-300">USC Viterbi School of Engineering — Los Angeles, CA</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">Aug 2023 – Dec 2024</p>
+
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Guided students through machine representation, ISA/assembly, calling conventions, and the compilation/linking toolchain.</li>
+            <li>Taught memory hierarchy and performance: caches, locality, prefetching intuition, and simple cache-sim exercises.</li>
+            <li>Explained virtual memory, address translation, and process isolation with hands-on page table walkthroughs.</li>
+            <li>Debugged low-level C and assembly labs; demonstrated profiling and instrumentation to locate hot paths and leaks.</li>
+            <li>Introduced systems diagnostics: <strong>gdb</strong>, <strong>valgrind</strong>/sanitizers, <strong>strace</strong>/<strong>ltrace</strong>, and logging strategies for concurrency-adjacent bugs.</li>
+            <li>Reviewed lab submissions for correctness, portability, and undefined behavior; reinforced safe systems idioms.</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">C / Assembly</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Memory & Caches</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Virtual Memory</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">gdb / Valgrind</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">strace / ltrace</span>
+        </div>
+        </article>
+
+        <!-- Math Grader -->
+        <article id="grader" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Mathematics Grader — Calculus III for Engineers & Scientists</h3>
+        <p class="text-gray-700 dark:text-gray-300">USC Department of Mathematics — Los Angeles, CA</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">Sep 2022 – May 2025</p>
+
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Graded and provided detailed feedback for approximately <strong>300 students</strong> each term on multivariable and vector calculus assignments using <strong>Gradescope</strong> and <strong>Blackboard</strong>.</li>
+            <li>Ensured grading consistency by compiling and reporting <strong>statistical summaries</strong> (mean, median, and standard deviation) to assist instructors in normalization and curve adjustments.</li>
+            <li>Helped students interpret and correct conceptual misunderstandings during <strong>office hours</strong>, explaining complex topics such as partial derivatives, double/triple integrals, and vector fields in geometric terms.</li>
+            <li>Clarified applications of <strong>gradient, divergence, and curl</strong> with visual analogies and examples connecting calculus to engineering contexts (e.g., heat flow, fluid circulation, and electromagnetic fields).</li>
+            <li>Collaborated with teaching assistants to align grading rubrics, ensuring fairness and accuracy across multiple graders and sections.</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Multivariable Calculus</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Vector Calculus</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Gradescope</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Conceptual Tutoring</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Data Normalization</span>
+        </div>
+        </article>
+
+        
+      </div>
+    </section>
+
+    <!-- Industry Experience -->
+    <section id="industry">
+    <h2 class="text-2xl font-semibold mb-8 border-b border-gray-300 dark:border-gray-700 pb-2">
+        Industry Experience
+    </h2>
+
+    <div class="space-y-8">
+        <!-- AiFinSphere -->
+        <article id="aifinsphere" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Machine Learning Intern</h3>
+        <p class="text-gray-700 dark:text-gray-300">AiFinSphere Inc. — New York, NY</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">Jul 2024</p>
+
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Designed and trained <strong>classification and regression models</strong> for <strong>risk assessment</strong>, <strong>fraud detection</strong>, and <strong>market regime prediction</strong> using Python (<strong>scikit-learn, XGBoost, TensorFlow</strong>).</li>
+            <li>Implemented <strong>data preprocessing</strong> and <strong>feature engineering pipelines</strong> that integrated over <strong>40 financial indicators</strong> (moving averages, RSI, MACD, Bollinger bands) and sentiment-derived features from NLP models.</li>
+            <li>Built ensemble and walk-forward validation frameworks that <strong>improved predictive accuracy by ~20%</strong> and reduced overfitting in volatile market conditions.</li>
+            <li>Conducted <strong>Hidden Markov Model (HMM)</strong>–based market state segmentation to identify structural shifts and volatility clusters in financial time series.</li>
+            <li>Produced <strong>analytical reports and dashboards</strong> translating ML and sentiment model outputs into actionable insights for investment teams, improving decision efficiency by <strong>~25%</strong>.</li>
+            <li>Collaborated cross-functionally with quantitative researchers to test model robustness, streamline deployment scripts, and ensure compliance with internal reproducibility standards.</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Python</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">scikit-learn / TensorFlow</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Financial Modeling</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">HMM / NLP</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Feature Engineering</span>
+        </div>
+        </article>
+
+        <!-- Microsoft -->
+        <article id="microsoft" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Software Engineer Intern</h3>
+        <p class="text-gray-700 dark:text-gray-300">Microsoft — Remote (China)</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">Jun 2022 – Aug 2022</p>
+
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Developed and maintained <strong>backend messaging services</strong> in <strong>Java</strong> using <strong>AWS</strong> cloud infrastructure (<strong>EC2, S3, DynamoDB</strong>), ensuring fault-tolerant message transmission and durable storage.</li>
+            <li>Refactored core algorithms for message queue handling, <strong>reducing server response latency by over 20%</strong> through asynchronous I/O and caching strategies.</li>
+            <li>Implemented <strong>real-time notification and alert systems</strong> leveraging WebSocket and event-driven architecture, enhancing user engagement and system reactivity.</li>
+            <li>Optimized data serialization and API payloads with <strong>Protobuf</strong> to minimize network overhead and improve throughput for concurrent requests.</li>
+            <li>Collaborated with cross-functional engineers to deploy containerized builds via <strong>Docker</strong> and CI/CD pipelines, ensuring seamless integration with existing microservices.</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Java</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">AWS (EC2, S3, DynamoDB)</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Microservices</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">WebSocket / Protobuf</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Docker / CI-CD</span>
+        </div>
+        </article>
+    </div>
+    </section>
+
+
+    <!-- Campus Leadership -->
+    <section id="leadership">
+    <h2 class="text-2xl font-semibold mb-8 border-b border-gray-300 dark:border-gray-700 pb-2">
+        Campus Leadership
+    </h2>
+
+    <div class="space-y-8">
+        <!-- Resident Advisor -->
+        <article id="ra" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow p-6">
+        <h3 class="text-xl font-semibold">Resident Advisor</h3>
+        <p class="text-gray-700 dark:text-gray-300">USC Housing — Los Angeles, CA</p>
+        <p class="text-gray-500 dark:text-gray-400 mb-4">Aug 2022 – May 2023</p>
+
+        <ul class="list-disc list-inside space-y-1.5 text-gray-700 dark:text-gray-300">
+            <li>Mentored and supported a community of <strong>40 first-year residents</strong>, promoting academic success, wellness, and a positive transition to university life.</li>
+            <li>Served as the <strong>first point of contact during emergency situations</strong> on weekly on-call shifts, coordinating with campus safety and student health services when needed.</li>
+            <li>Organized <strong>community-building programs</strong>—including cultural events, study nights, and service projects—enhancing residential engagement and belonging.</li>
+            <li>Facilitated small-group and floor meetings to encourage dialogue around <strong>diversity, equity, and inclusion (DEI)</strong> topics, fostering open discussion and mutual respect among residents.</li>
+            <li>Collaborated with the Residential Education team to <strong>mediate interpersonal conflicts</strong> confidentially and create actionable plans for resolution and follow-up.</li>
+            <li>Trained in <strong>crisis management</strong>, student conduct policy, and trauma-informed communication; applied these skills to de-escalate sensitive situations effectively.</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Mentorship</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Community Building</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Conflict Mediation</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">DEI Programming</span>
+            <span class="px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900">Crisis Response</span>
+        </div>
+        </article>
+    </div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-900 py-8 border-t border-gray-200 dark:border-gray-700">
+    <div class="max-w-6xl mx-auto text-center text-gray-700 dark:text-gray-300">
+      <a href="index.html" class="text-indigo-600 hover:underline">← Back to Home</a>
+      <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">© 2025 Xuanyu Pan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Persist dark mode from home page if already set
+    (function initTheme() {
+      const saved = localStorage.theme;
+      if (saved === 'dark') document.documentElement.classList.add('dark');
+    })();
+
+    // Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    });
+  </script>
+</body>
+</html>
